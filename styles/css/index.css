@@ -1,0 +1,426 @@
+:root {
+  --Black: #101010;
+  --White: #FFF;
+  --Grey-2: #EAEAEA;
+  --Grey: #353535;
+  --Background:#F6F6F6;
+  --Primary:#9356DC;
+  --grey-tint-4:#7E7E7E;
+  --Green-Font:#008766;
+  --Green-light: #99E2D0;
+}
+
+body {
+  margin: 0;
+}
+
+.btn {
+  border-radius: 25px;
+  padding: 15px;
+  text-decoration: none;
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  color: white;
+  border: none;
+  font-family: "Roboto";
+}
+.btn:hover {
+  background: linear-gradient(to top, #b88af0, #ffa7e3);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.loader {
+  background: orange;
+  width: 100%;
+  height: 100%;
+  font-size: x-large;
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  animation: loder 1s linear 1s forwards;
+}
+.loader .loader-icon {
+  vertical-align: middle;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  animation: rotate 1s linear infinite;
+}
+.loader .loader-icon i {
+  color: var(--Black);
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-style: italic;
+  font-family: "Shrikhand";
+  height: 36px;
+  padding: 0px 19px 0px 16px;
+  color: var(--Black);
+  background: var(--White);
+  font-size: 30px;
+}
+header .icone {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  background: var(--Grey-2);
+  height: 50px;
+}
+header .icone .fa-location-dot {
+  width: 12px;
+  height: 16px;
+}
+header .icone p {
+  margin: 0;
+  color: var(--Grey);
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+.section1 {
+  background: var(--Background);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 30px;
+}
+.section1 h2 {
+  font-size: 24px;
+  text-align: center;
+  font-family: "Roboto";
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .section1 h2 {
+    font-size: 40px;
+  }
+}
+.section1 p {
+  text-align: center;
+  font-size: 17px;
+  font-family: "Roboto";
+  font-weight: 300;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .sec-Fonctionnement {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 50px 180px;
+    box-sizing: border-box;
+  }
+}
+.sec-Fonctionnement a {
+  text-decoration: none;
+}
+.sec-Fonctionnement h2 {
+  font-size: 24px;
+  font-family: "Roboto";
+  width: 275px;
+  height: 31px;
+  padding-left: 25px;
+}
+@media (min-width: 768px) {
+  .sec-Fonctionnement h2 {
+    margin: 0;
+  }
+}
+.sec-Fonctionnement .but-fonct {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .sec-Fonctionnement .but-fonct {
+    gap: 20px;
+    flex-direction: row;
+  }
+}
+.sec-Fonctionnement .button-fonc {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto";
+  border-radius: 20px;
+  background: var(--Background);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  width: 95%;
+  gap: 25px;
+}
+.sec-Fonctionnement .button-fonc:hover i {
+  color: var(--Primary);
+}
+@media (min-width: 768px) {
+  .sec-Fonctionnement .button-fonc {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Roboto";
+    border: none;
+    background: var(--Background);
+    border-radius: 20px;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 20px;
+    justify-content: left;
+  }
+}
+.sec-Fonctionnement .button-fonc .number__dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--Primary);
+  width: 30px;
+  height: 24px;
+  border-radius: 50%;
+  color: var(--White);
+  font-size: 14px;
+  position: relative;
+  right: 13px;
+}
+.sec-Fonctionnement .button-fonc .fa-mobile-screen-button,
+.sec-Fonctionnement .button-fonc .fa-list-ul,
+.sec-Fonctionnement .button-fonc .fa-store {
+  color: var(--grey-tint-4);
+}
+.sec-Fonctionnement .button-fonc .p-fonct {
+  text-decoration: none;
+  color: var(--Black);
+  width: 100%;
+}
+
+.sec-restaurant {
+  background: var(--Background);
+}
+@media (min-width: 768px) {
+  .sec-restaurant {
+    padding: 30px 180px;
+    box-sizing: border-box;
+  }
+}
+.sec-restaurant h2 {
+  padding-left: 18px;
+  padding-top: 30px;
+}
+@media (min-width: 768px) {
+  .sec-restaurant h2 {
+    font-size: 24px;
+    text-align: left;
+    padding: 0;
+  }
+}
+.sec-restaurant .container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: center;
+  padding: 10px;
+  padding-bottom: 66px;
+}
+@media (min-width: 768px) {
+  .sec-restaurant .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    padding-top: 0;
+    gap: 50px;
+  }
+}
+.sec-restaurant .card {
+  background: var(--White);
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  flex: 30%;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.sec-restaurant .card .card-img {
+  width: 100%;
+  object-fit: cover;
+  height: 231px;
+}
+.sec-restaurant .card .new-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--Green-light);
+  color: var(--Green-Font);
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.sec-restaurant .card .element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.sec-restaurant .card .element div {
+  margin: 0;
+  padding: 0;
+}
+.sec-restaurant .card .element .card-tittle {
+  font-size: 18px;
+  font-family: "Roboto";
+  margin-bottom: 0;
+  padding-left: 7px;
+}
+.sec-restaurant .card .element .p-title {
+  font-size: 17px;
+  font-family: "Roboto";
+  font-weight: 300;
+  padding-left: 7px;
+  margin-top: 0;
+}
+.sec-restaurant .card .element .heart__icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.sec-restaurant .card .element .heart__icon .coeur-vide {
+  position: absolute;
+}
+.sec-restaurant .card .element .heart__icon .coeur-vide:hover {
+  opacity: 0;
+}
+.sec-restaurant .card .element .heart__icon .coeur-plein {
+  position: absolute;
+  opacity: 0;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.sec-restaurant .card .element .heart__icon .coeur-plein:hover {
+  -webkit-background-clip: text;
+  background-clip: text;
+  opacity: 1;
+  animation: fill 0.3 ease-in-out;
+  transition-duration: 0.3s;
+}
+
+footer {
+  background: var(--Grey);
+  color: var(--White);
+  display: flex;
+  padding: 30px 25px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+}
+footer .titre-footer {
+  text-align: center;
+  font-family: "Shrikhand";
+  height: 27px;
+  color: var(--White);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  footer .titre-footer {
+    font-size: 20px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+footer ul {
+  font-family: "Roboto";
+  font-size: 14px;
+  margin: 0px;
+  padding: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+@media (min-width: 768px) {
+  footer ul {
+    display: flex;
+    justify-content: end;
+    color: var(--White);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+  }
+}
+footer ul li {
+  padding: 5px;
+}
+footer ul li a {
+  color: var(--White);
+  text-decoration: none;
+}
+footer ul li a i {
+  margin-right: 11px;
+}
+
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes loder {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

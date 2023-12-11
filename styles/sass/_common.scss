@@ -1,0 +1,32 @@
+$tablette_size: 768px;
+$desktop_size: 1024px;
+:root{
+    --Black: #101010;
+    --White: #FFF;
+    --Grey-2: #EAEAEA;
+    --Grey: #353535;
+    --Background:#F6F6F6;
+    --Primary:#9356DC;
+    --grey-tint-4:#7E7E7E;
+    --Green-Font:#008766;
+    --Green-light: #99E2D0;
+}
+
+body {
+    margin: 0;
+}
+
+.btn {
+    border-radius: 25px;
+    padding: 15px;
+    text-decoration: none;
+    background: linear-gradient(to top, #9356dc, #ff79da);
+    color: white;
+    border: none;
+    font-family: "Roboto";
+    
+    &:hover{
+        background: linear-gradient(to top, #b88af0, #ffa7e3);
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+    }
+}

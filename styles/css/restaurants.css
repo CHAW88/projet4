@@ -3,10 +3,10 @@
   --White: #FFF;
   --Grey-2: #EAEAEA;
   --Grey: #353535;
-  --Background:#F6F6F6;
-  --Primary:#9356DC;
-  --grey-tint-4:#7E7E7E;
-  --Green-Font:#008766;
+  --Background: #F6F6F6;
+  --Primary: #9356DC;
+  --grey-tint-4: #7E7E7E;
+  --Green-Font: #008766;
   --Green-light: #99E2D0;
 }
 
@@ -26,6 +26,25 @@ body {
 .btn:hover {
   background: linear-gradient(to top, #b88af0, #ffa7e3);
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  gap: 40px;
+  text-decoration: none;
+  border-radius: 25px;
+  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  color: var(--White);
+  border: none;
+  font-family: "Roboto";
+  padding-right: 13%;
+  padding-left: 13%;
+}
+.button:hover {
+  background: linear-gradient(to top, #B88AF0, #FFA7E3);
 }
 
 .header {
@@ -57,20 +76,21 @@ body {
 
 .image-section {
   position: relative;
-  top: -40px;
+  top: -29px;
   background: var(--Background);
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 5px;
+  padding: 7px;
 }
 @media (min-width: 768px) {
   .image-section {
     padding: 8%;
     margin-left: 15%;
     margin-right: 15%;
+    top: -40px;
   }
 }
 .image-section .title-menu {
@@ -128,20 +148,9 @@ body {
   padding-bottom: 4px;
   line-height: 18px;
   width: 42px;
-  margin-left: 4%;
   font-family: "Roboto";
   font-weight: 300;
-  margin-top: 10%;
-}
-@media (min-width: 768px) {
-  .image-section .anim h2 {
-    margin-left: 2%;
-  }
-}
-@media (min-width: 1024px) {
-  .image-section .anim h2 {
-    margin-left: 2%;
-  }
+  margin-left: 4px;
 }
 .image-section .anim .plats {
   background-color: var(--White);
@@ -166,7 +175,7 @@ body {
   transform: scaleX(1);
 }
 .image-section .anim .plats h3 {
-  font-size: 15px;
+  font-size: 14px;
   margin: 2px;
   margin-left: 12px;
   font-family: "Roboto";
@@ -213,38 +222,29 @@ body {
   margin-left: 20px;
 }
 .image-section .button-centre2 {
-  text-align: center;
-  padding: 20px;
+  height: 50px;
   margin-top: 46px;
   padding-bottom: 11%;
-}
-.image-section .button-centre2 .button {
-  border-radius: 25px;
-  padding: 15px;
-  text-decoration: none;
-  background: linear-gradient(to top, #9356DC, #FF79DA);
-  color: var(--White);
-  border: none;
-  font-family: "Roboto";
-  padding-right: 13%;
-  padding-left: 13%;
-}
-.image-section .button-centre2 .button:hover {
-  background: linear-gradient(to top, #B88AF0, #FFA7E3);
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 40px;
 }
 
 footer {
-  display: block;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   background: var(--Grey);
   color: var(--White);
-  padding: 15px;
-  margin-top: -9%;
+  padding: 22px 25px;
+  gap: 16px;
+  margin-top: -29px;
 }
 @media (min-width: 768px) {
   footer {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     background: var(--Grey);
     color: var(--White);
@@ -256,24 +256,18 @@ footer .titre-footer {
   font-size: 20px;
   text-align: center;
   font-style: italic;
-  margin-right: 86%;
   font-family: "Shrikhand";
+  height: 27px;
+  font-size: 18px;
 }
 @media (min-width: 768px) {
   footer .titre-footer {
-    font-size: 20px;
-    text-align: center;
-    font-style: italic;
     margin-top: 15px;
     margin-right: 0;
-    font-family: "Shrikhand";
   }
 }
 footer ul {
   font-family: "Roboto";
-  font-size: 14px;
-  margin: 0px;
-  padding: 15px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -281,16 +275,14 @@ footer ul {
 }
 @media (min-width: 768px) {
   footer ul {
-    font-family: "Roboto";
-    font-size: 14px;
     display: flex;
     justify-content: end;
-    gap: 16px;
-    padding-right: 10%;
+    padding: 30px 25px;
   }
 }
 footer ul li {
-  padding: 5px;
+  padding: 7px;
+  font-size: 16px;
 }
 footer ul li a {
   color: var(--White);

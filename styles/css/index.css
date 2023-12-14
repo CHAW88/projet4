@@ -3,10 +3,10 @@
   --White: #FFF;
   --Grey-2: #EAEAEA;
   --Grey: #353535;
-  --Background:#F6F6F6;
-  --Primary:#9356DC;
-  --grey-tint-4:#7E7E7E;
-  --Green-Font:#008766;
+  --Background: #F6F6F6;
+  --Primary: #9356DC;
+  --grey-tint-4: #7E7E7E;
+  --Green-Font: #008766;
   --Green-light: #99E2D0;
 }
 
@@ -26,6 +26,25 @@ body {
 .btn:hover {
   background: linear-gradient(to top, #b88af0, #ffa7e3);
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  gap: 40px;
+  text-decoration: none;
+  border-radius: 25px;
+  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  color: var(--White);
+  border: none;
+  font-family: "Roboto";
+  padding-right: 13%;
+  padding-left: 13%;
+}
+.button:hover {
+  background: linear-gradient(to top, #B88AF0, #FFA7E3);
 }
 
 .loader {

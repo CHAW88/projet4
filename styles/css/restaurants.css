@@ -40,32 +40,28 @@ body {
   color: var(--White);
   border: none;
   font-family: "Roboto";
-  padding-right: 13%;
-  padding-left: 13%;
+  padding-right: 48px;
+  padding-left: 48px;
 }
 .button:hover {
   background: linear-gradient(to top, #B88AF0, #FFA7E3);
 }
 
-.header {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 89px 13px 17px;
+  padding: 14px 16px;
   height: 63px;
 }
-.header .back-link {
+header a {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: var(--Grey);
 }
-.header .logo-container {
-  flex-grow: 1;
-  text-align: center;
-}
-.header .title {
-  margin: 0;
+header img {
+  justify-self: center;
 }
 
 .img-card {
@@ -96,53 +92,43 @@ body {
 .image-section .title-menu {
   display: flex;
   align-items: center;
-  padding: 15px;
+  padding-top: 17px;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .image-section .title-menu {
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
 }
 .image-section .title-menu h1 {
-  flex: 1;
-  text-align: center;
   font-size: 26px;
-  font-style: italic;
   font-family: "Shrikhand";
-  padding-top: 15px;
+  margin: 0;
 }
-.image-section .title-menu .heart__icon-menu {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 12px;
-  margin-bottom: 10px;
-  font-size: 25px;
+@media (min-width: 768px) {
+  .image-section .title-menu h1 {
+    font-size: 28px;
+  }
 }
-.image-section .title-menu .heart__icon-menu .coeur-plein {
-  position: absolute;
-  opacity: 0;
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-.image-section .title-menu .heart__icon-menu .coeur-plein:hover {
-  -webkit-background-clip: text;
-  background-clip: text;
-  opacity: 1;
-  animation: fill 0.3s ease-in-out;
-  transition-duration: 0.3s;
-}
-.image-section .title-menu .heart__icon-menu .coeur-vide {
-  position: absolute;
-}
-.image-section .title-menu .heart__icon-menu .coeur-vide:hover {
-  opacity: 0;
+.image-section .title-menu i {
+  height: 22px;
+  width: 22px;
+  margin-right: 24px;
 }
 .image-section .anim {
   animation: fadein 4s ease-in;
   display: flex;
   flex-direction: column;
+  gap: 40px;
+}
+.image-section .anim > div {
+  display: flex;
+  flex-direction: column;
   gap: 12px;
 }
-.image-section .anim h2 {
+.image-section .anim > div h2 {
   color: var(--Black);
   border-bottom: 3px solid #99E2D0;
   padding-bottom: 4px;
@@ -151,8 +137,9 @@ body {
   font-family: "Roboto";
   font-weight: 300;
   margin-left: 4px;
+  margin-top: 0;
 }
-.image-section .anim .plats {
+.image-section .anim > div .plats {
   background-color: var(--White);
   border-radius: 20px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
@@ -166,29 +153,29 @@ body {
   height: 69px;
   box-sizing: border-box;
 }
-.image-section .anim .plats:hover {
+.image-section .anim > div .plats:hover {
   padding-right: 60px;
   transition: 0.7s ease;
 }
-.image-section .anim .plats:hover .box {
+.image-section .anim > div .plats:hover .box {
   opacity: 1;
   transform: scaleX(1);
 }
-.image-section .anim .plats h3 {
+.image-section .anim > div .plats h3 {
   font-size: 14px;
   margin: 2px;
   margin-left: 12px;
   font-family: "Roboto";
   text-overflow: ellipsis;
 }
-.image-section .anim .plats .line {
+.image-section .anim > div .plats .line {
   display: flex;
   justify-content: space-between;
   margin-right: 16px;
   font-family: "Roboto";
   font-weight: 200;
 }
-.image-section .anim .plats .line .p {
+.image-section .anim > div .plats .line .p {
   margin-left: 10px;
   margin-top: 3px;
   font-weight: 300;
@@ -197,10 +184,10 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.image-section .anim .plats .line span {
+.image-section .anim > div .plats .line span {
   font-weight: bold;
 }
-.image-section .anim .plats .box {
+.image-section .anim > div .plats .box {
   background-color: var(--Green-light);
   display: flex;
   justify-items: center;
@@ -217,18 +204,16 @@ body {
   transform: scaleX(0);
   transition: 0.7s ease;
 }
-.image-section .anim .plats .box .fa-lg {
+.image-section .anim > div .plats .box .fa-lg {
   color: var(--White);
   margin-left: 20px;
 }
 .image-section .button-centre2 {
   height: 50px;
-  margin-top: 46px;
-  padding-bottom: 11%;
+  margin-bottom: 40px;
   display: flex;
   justify-content: center;
   text-align: center;
-  gap: 40px;
 }
 
 footer {

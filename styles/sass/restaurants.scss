@@ -40,9 +40,9 @@ header {
     padding: 7px;
 
     @media (min-width: $tablette_size) {
-        padding: 8%;
-        margin-left: 15%;
-        margin-right: 15%;
+        padding: 100px;
+        margin-left: 100px;
+        margin-right: 100px;
         top: -40px;
     }
 
@@ -52,8 +52,9 @@ header {
         align-items: center;
         padding-top: 17px;
         justify-content: space-between;
-        @media (min-width: $tablette_size){
-            justify-content:center;
+
+        @media (min-width: $tablette_size) {
+            justify-content: center;
             align-items: center;
             gap: 24px;
         }
@@ -63,7 +64,8 @@ header {
             font-size: 26px;
             font-family: "Shrikhand";
             margin: 0;
-            @media (min-width: $tablette_size){
+
+            @media (min-width: $tablette_size) {
                 font-size: 28px;
             }
         }
@@ -72,6 +74,7 @@ header {
             height: 22px;
             width: 22px;
             margin-right: 24px;
+
         }
     }
 
@@ -95,7 +98,6 @@ header {
                 width: 42px;
                 font-family: 'Roboto';
                 font-weight: 300;
-                margin-left: 4px;
                 margin-top: 0;
             }
 

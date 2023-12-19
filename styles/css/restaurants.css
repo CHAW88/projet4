@@ -83,9 +83,9 @@ header img {
 }
 @media (min-width: 768px) {
   .image-section {
-    padding: 8%;
-    margin-left: 15%;
-    margin-right: 15%;
+    padding: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
     top: -40px;
   }
 }
@@ -136,7 +136,6 @@ header img {
   width: 42px;
   font-family: "Roboto";
   font-weight: 300;
-  margin-left: 4px;
   margin-top: 0;
 }
 .image-section .anim > div .plats {

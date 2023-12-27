@@ -16,7 +16,7 @@
         position: fixed;
         top: 50%;
         left: 50%;
-        animation: rotate 1s linear infinite;
+        animation: rotate 1s linear infinite  ;
 
         i {
             color: var(--Black);
@@ -71,14 +71,15 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 18px;
-    padding: 30px ;
+    padding: 30px;
 
     h2 {
         font-size: 24px;
         text-align: center;
         font-family: "Roboto";
         margin: 0;
-        @media (min-width: $tablette_size){
+
+        @media (min-width: $tablette_size) {
             font-size: 40px;
         }
     }
@@ -165,7 +166,7 @@ header {
             justify-content: left;
         }
 
-       
+
 
         .number__dot {
             display: flex;
@@ -189,7 +190,7 @@ header {
 
         .p-fonct {
             text-decoration: none;
-            color:var(--Black);
+            color: var(--Black);
             width: 100%;
         }
     }
@@ -216,7 +217,7 @@ header {
             padding: 0;
         }
 
-        
+
 
     }
 
@@ -259,7 +260,7 @@ header {
             position: absolute;
             top: 10px;
             right: 10px;
-            background-color:var( --Green-light);
+            background-color: var(--Green-light);
             color: var(--Green-Font);
             padding: 5px 10px;
             border-radius: 2px;
@@ -294,43 +295,6 @@ header {
                 margin-top: 0;
             }
 
-            .heart__icon {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-right: 40px;
-                font-size: 25px;
-                margin-bottom: 30px;
-
-                .coeur-vide {
-                    position:absolute;
-                
-
-                    &:hover {
-                        opacity: 0;
-                    }
-                }
-
-                .coeur-plein {
-                    position: absolute;
-                    opacity: 0;
-                    background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-                    -webkit-background-clip: text;
-                    background-clip: text;
-                    color: transparent;
-
-                    &:hover {
-                        -webkit-background-clip: text;
-                        background-clip: text;
-                        opacity: 1;
-                        animation: fill 0.3s ease-in-out;
-                        transition-duration: 0.3s;
-                    }
-                }
-
-            }
-
         }
 
     }
@@ -354,7 +318,7 @@ footer {
         gap: 50px;
     }
 
-    
+
 
     .titre-footer {
         text-align: center;
@@ -396,7 +360,7 @@ footer {
             font-style: normal;
         }
 
-       
+
 
         li {
             padding: 5px;
@@ -405,7 +369,7 @@ footer {
                 color: var(--White);
                 text-decoration: none;
 
-                i{
+                i {
                     margin-right: 11px;
                 }
             }
@@ -441,11 +405,11 @@ footer {
 
 @keyframes rotate {
     from {
-        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
 
     to {
-        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
@@ -453,11 +417,6 @@ footer {
     0% {
         opacity: 1;
     }
-
-    50% {
-        opacity: 0.5;
-    }
-
 
     100% {
         opacity: 0;

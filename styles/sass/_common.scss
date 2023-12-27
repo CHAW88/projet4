@@ -52,3 +52,45 @@ body {
 
     }
 }
+
+.heart__icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    font-size: 23px;
+    width: 50px;
+    height: 100%;
+    i {
+        height: 22px;
+        width: 22px;
+        margin-right: 24px;
+    }
+    
+    .coeur-vide {
+        position: absolute;
+
+
+
+        &:hover {
+            opacity: 0;
+        }
+    }
+
+    .coeur-plein {
+        position: absolute;
+        opacity: 0;
+        background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+        background-clip: text;
+        color: transparent;
+
+        &:hover {
+            background-clip: text;
+            opacity: 1;
+            animation: fill 0.3s ease-in-out ;
+
+        }
+    }
+
+}

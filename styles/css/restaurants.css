@@ -47,6 +47,40 @@ body {
   background: linear-gradient(to top, #B88AF0, #FFA7E3);
 }
 
+.heart__icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  font-size: 23px;
+  width: 50px;
+  height: 100%;
+}
+.heart__icon i {
+  height: 22px;
+  width: 22px;
+  margin-right: 24px;
+}
+.heart__icon .coeur-vide {
+  position: absolute;
+}
+.heart__icon .coeur-vide:hover {
+  opacity: 0;
+}
+.heart__icon .coeur-plein {
+  position: absolute;
+  opacity: 0;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background-clip: text;
+  color: transparent;
+}
+.heart__icon .coeur-plein:hover {
+  background-clip: text;
+  opacity: 1;
+  animation: fill 0.3s ease-in-out;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -103,7 +137,7 @@ header img {
   }
 }
 .image-section .title-menu h1 {
-  font-size: 26px;
+  font-size: 21px;
   font-family: "Shrikhand";
   margin: 0;
 }
@@ -111,11 +145,6 @@ header img {
   .image-section .title-menu h1 {
     font-size: 28px;
   }
-}
-.image-section .title-menu i {
-  height: 22px;
-  width: 22px;
-  margin-right: 24px;
 }
 .image-section .anim {
   animation: fadein 4s ease-in;
@@ -151,21 +180,24 @@ header img {
   gap: 5px;
   height: 69px;
   box-sizing: border-box;
+  padding-right: 0;
+  transition: 0.7s ease;
 }
 .image-section .anim > div .plats:hover {
   padding-right: 60px;
-  transition: 0.7s ease;
 }
 .image-section .anim > div .plats:hover .box {
   opacity: 1;
   transform: scaleX(1);
 }
 .image-section .anim > div .plats h3 {
-  font-size: 14px;
+  font-size: 18px;
   margin: 2px;
   margin-left: 12px;
   font-family: "Roboto";
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .image-section .anim > div .plats .line {
   display: flex;
